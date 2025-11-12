@@ -23,7 +23,7 @@ def get_binance_btcusd_price():
 
 
 # returns the last trade price on Binance’
-get_binance_btcusd_price()
+# get_binance_btcusd_price()
 
 #returns current Global average Bitcoin Price
 get_bitcoin_price()
