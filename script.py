@@ -14,6 +14,17 @@ def get_bitcoin_price():
     price = data["bitcoin"]["usd"]
     print(f"Current Bitcoin Price: ${price:,}")
 
+def get_binance_btcusd_price():
+    url = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+    data = requests.get(url).json()
+    print(f"Binance BTC Price: ${float(data['price']):,.2f}")
 
+
+
+
+#Binance Price
+get_binance_btcusd_price()
+
+#Aggregated Price
 get_bitcoin_price()
 
